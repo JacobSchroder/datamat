@@ -2,6 +2,8 @@
 
 Dotfiles and bootstrap scripts for a fresh macOS setup. Clone, run one script, get your full dev environment.
 
+> **This repo is public.** Do not commit secrets, API tokens, passwords, or personal information. Use placeholders for any sensitive values (see [Manual Steps After Install](#manual-steps-after-install)).
+
 ## Quick Start
 
 ```bash

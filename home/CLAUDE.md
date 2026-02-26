@@ -2,6 +2,8 @@
 
 This machine's dev environment is bootstrapped from `~/datamat`. Keep it in sync.
 
+**This repo is public.** Never commit secrets, API tokens, passwords, or personal information. Always use placeholders (see Sanitization below).
+
 ## Repo structure
 
 ```
