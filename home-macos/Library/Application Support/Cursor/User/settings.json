@@ -1,0 +1,49 @@
+{
+  "git.autofetch": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "sonarlint.rules": {
+    "typescript:S125": {
+      "level": "off"
+    },
+    "javascript:S6544": {
+      "level": "off"
+    }
+  },
+  "sonarlint.pathToNodeExecutable": "$HOME/.nvm/versions/node/v18.17.1/bin/node",
+  "aws.suppressPrompts": {
+    "fileViewerEdit": true
+  },
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "git.confirmSync": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.preferredAccount": "JacobSchroder",
+  "editor.minimap.enabled": false,
+  "material-icon-theme.folders.customClones": [],
+  "githubPullRequests.createOnPublishBranch": "never",
+  "color-highlight.matchHslWithNoFunction": true,
+  "githubPullRequests.pullBranch": "never",
+  "color-highlight.markerType": "dot-before",
+  "go.alternateTools": {},
+  "rest-client.previewResponsePanelTakeFocus": false,
+  "cursor.cpp.disabledLanguages": [],
+  "go.toolsManagement.autoUpdate": true,
+  "makefile.configureOnOpen": true,
+  "security.promptForLocalFileProtocolHandling": false,
+  "githubPullRequests.remotes": [
+    "origin"
+  ],
+  "cursor.inlineDiff.mode": "unified",
+  "accessibility.signalOptions.volume": 0,
+  "editor.accessibilitySupport": "off",
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.useTerminal": true,
+  "redhat.telemetry.enabled": false,
+  "typescript.experimental.useTsgo": true
+}

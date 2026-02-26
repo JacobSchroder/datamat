@@ -1,0 +1,4 @@
+keybind = cmd+d=new_split:right
+keybind = cmd+opt+minus=close_surface
+theme = Gitlab Dark Grey
+split-divider-color = #888888

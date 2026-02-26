@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+*.swo
+*~
+*.secret
+*.key
+*.pem
+Brewfile.lock.json
+home/.config/zed/.tmp*
+home/.config/zed/conversations/
+home/.config/zed/embeddings/
