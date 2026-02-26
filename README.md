@@ -16,18 +16,17 @@ cd ~/datamat
 
 | Category | Tools |
 |----------|-------|
-| **Languages** | Go, Python 3.11 (pyenv), Node.js (nvm), Bun, Deno |
+| **Languages** | Go, Python 3.11 (pyenv), Node.js (nvm), Bun |
 | **Package managers** | Homebrew, pnpm, pipx |
-| **CLI tools** | awscli, gh, ripgrep, htop, tree, direnv, entr, neovim, sqlc, protobuf, pre-commit, git-lfs, terraform, opentofu, cdk, conftest |
-| **Databases** | PostgreSQL 17, pgAdmin 4, DataGrip |
+| **CLI tools** | awscli, gh, ripgrep, htop, tree, direnv, entr, sqlc, protobuf, pre-commit, git-lfs, terraform, opentofu, cdk, conftest, imagemagick, tailwindcss |
 | **Go binaries** | air, templ, templui, gopls, staticcheck, swag, task, protoc-gen-go, protoc-gen-go-grpc, goa, go-blueprint |
-| **Editors** | Cursor (+ 43 extensions), Zed |
-| **Terminals** | Ghostty, Warp |
+| **Editors** | Cursor (+ extensions), Zed |
+| **Terminals** | Ghostty |
 | **Shell** | Oh My Zsh, zsh-autosuggestions, zsh-syntax-highlighting |
-| **Dev tools** | OrbStack, Postman, GitHub Desktop, Android Studio, SF Symbols |
-| **Browsers** | Brave, Firefox, Chrome |
-| **Productivity** | Claude, Raycast, Notion, Obsidian, Linear, Morgen, Slack, Discord, Telegram, Zoom, Perplexity |
-| **Media** | Spotify, Steam |
+| **Dev tools** | OrbStack, SF Symbols, Session Manager Plugin |
+| **Browsers** | Brave, Dia |
+| **Productivity** | Claude, Raycast, Notion, Obsidian, Linear, Slack, Telegram, Perplexity |
+| **Media** | Spotify |
 | **macOS defaults** | Fast key repeat, Dock autohide, Finder tweaks, tap-to-click, screenshots to ~/Screenshots |
 
 ### Not automated (require separate installers/licenses)
