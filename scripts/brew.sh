@@ -14,6 +14,6 @@ else
 fi
 
 echo "==> Running brew bundle..."
-brew bundle --file="$DOTFILES_DIR/Brewfile" --no-lock
+brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 echo "    Homebrew setup complete."

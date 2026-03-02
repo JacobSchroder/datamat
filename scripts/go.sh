@@ -19,7 +19,6 @@ GO_PACKAGES=(
   "github.com/swaggo/swag/cmd/swag@latest"
   "github.com/go-task/task/v3/cmd/task@latest"
   "github.com/a-h/templ/cmd/templ@latest"
-  "github.com/axzilla/templui/cmd/templui@latest"
 )
 
 for pkg in "${GO_PACKAGES[@]}"; do

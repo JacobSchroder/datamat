@@ -1,7 +1,6 @@
 # Taps
 tap "antoniorodr/memo"              # Memo CLI tool
 tap "hashicorp/tap"                 # HashiCorp official tap
-tap "homebrew/services"             # Homebrew services management
 tap "steipete/tap"                  # remindctl and other tools
 tap "upcloudltd/tap"                # UpCloud CLI
 tap "yakitrak/yakitrak"             # Obsidian CLI
@@ -51,7 +50,6 @@ cask "claude"                       # Anthropic Claude desktop app
 cask "linear-linear"                # Project management
 cask "notion"                       # Notes and docs
 cask "obsidian"                     # Markdown knowledge base
-cask "perplexity"                   # AI search engine
 cask "raycast"                      # Launcher and productivity
 cask "slack"                        # Team messaging
 cask "telegram"                     # Messaging app
