@@ -53,6 +53,7 @@ cask "obsidian"                     # Markdown knowledge base
 cask "raycast"                      # Launcher and productivity
 cask "slack"                        # Team messaging
 cask "telegram"                     # Messaging app
+cast "wispr-flow"                   # speech to text
 
 # Casks — Browsers
 cask "brave-browser"                # Privacy-focused browser
