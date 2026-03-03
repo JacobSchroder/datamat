@@ -14,12 +14,13 @@
 	"vim_mode": false,
 	"context_servers": {
 		"mcp-server-context7": {
-			"enabled": true,
+   "enabled": true,
 			"settings": {
 				"default_minimum_tokens": "10000"
 			}
 		},
 		"Sanity": {
+      "settings": {},
 			"url": "https://mcp.sanity.io",
 			"headers": {
 				"Authorization": "Bearer <SANITY_TOKEN>"
