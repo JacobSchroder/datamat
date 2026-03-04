@@ -14,13 +14,13 @@
 	"vim_mode": false,
 	"context_servers": {
 		"mcp-server-context7": {
-   "enabled": true,
+			"enabled": true,
 			"settings": {
 				"default_minimum_tokens": "10000"
 			}
 		},
 		"Sanity": {
-      "settings": {},
+			"settings": {},
 			"url": "https://mcp.sanity.io",
 			"headers": {
 				"Authorization": "Bearer <SANITY_TOKEN>"
@@ -68,7 +68,7 @@
 				"source.fixAll.biome": true,
 				"source.organizeImports.biome": true
 			},
-			"language_servers": ["tsgo", "vtsls"]
+			"language_servers": ["vtsls"]
 		},
 		"TSX": {
 			"formatter": { "language_server": { "name": "biome" } },
@@ -76,7 +76,7 @@
 				"source.fixAll.biome": true,
 				"source.organizeImports.biome": true
 			},
-			"language_servers": ["tsgo", "vtsls"]
+			"language_servers": ["vtsls"]
 		},
 		"JSON": { "formatter": { "language_server": { "name": "biome" } } },
 		"JSONC": { "formatter": { "language_server": { "name": "biome" } } },

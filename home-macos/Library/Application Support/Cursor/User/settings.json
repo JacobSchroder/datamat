@@ -45,5 +45,6 @@
   "claudeCode.preferredLocation": "panel",
   "claudeCode.useTerminal": true,
   "redhat.telemetry.enabled": false,
-  "typescript.experimental.useTsgo": true
+  "typescript.experimental.useTsgo": true,
+  "window.commandCenter": true
 }
