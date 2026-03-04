@@ -16,14 +16,60 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # --- Dock ---
-# Autohide the Dock
-defaults write com.apple.dock autohide -bool true
-# Don't show recent applications in Dock
+defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock show-recents -bool false
-# Minimize windows using scale effect
 defaults write com.apple.dock mineffect -string "scale"
-# Set Dock icon size to 48 pixels
-defaults write com.apple.dock tilesize -int 48
+defaults write com.apple.dock tilesize -int 34
+defaults write com.apple.dock magnification -bool true
+defaults write com.apple.dock largesize -int 46
+
+# --- Dock apps & folders ---
+DOCK_APPS=(
+  "/Applications/Spotify.app"
+  "/System/Applications/Messages.app"
+  "/Applications/Slack.app"
+  "/Applications/Telegram.app"
+  "/System/Applications/Calendar.app"
+  "/System/Applications/Reminders.app"
+  "/Applications/Obsidian.app"
+  "/Applications/Granola.app"
+  "/Applications/Brave Browser.app"
+  "/Applications/Dia.app"
+  "/Applications/Linear.app"
+  "/Applications/Ghostty.app"
+  "/Applications/Zed.app"
+  "/Applications/Claude.app"
+  "/System/Applications/System Settings.app"
+)
+
+DOCK_FOLDERS=(
+  "$HOME/Screenshots"
+  "$HOME/Downloads"
+)
+
+add_dock_app() {
+  defaults write com.apple.dock persistent-apps -array-add \
+    "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>$1</string><key>_CFURLStringType</key><integer>0</integer></dict></dict><key>tile-type</key><string>file-tile</string></dict>"
+}
+
+add_dock_folder() {
+  defaults write com.apple.dock persistent-others -array-add \
+    "<dict><key>tile-data</key><dict><key>arrangement</key><integer>1</integer><key>displayas</key><integer>0</integer><key>file-data</key><dict><key>_CFURLString</key><string>file://$1/</string><key>_CFURLStringType</key><integer>15</integer></dict><key>showas</key><integer>0</integer></dict><key>tile-type</key><string>directory-tile</string></dict>"
+}
+
+# Clear existing dock apps and folders
+defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-others -array
+
+# Add apps in order
+for app in "${DOCK_APPS[@]}"; do
+  add_dock_app "$app"
+done
+
+# Add folders
+for folder in "${DOCK_FOLDERS[@]}"; do
+  add_dock_folder "$folder"
+done
 
 # --- Finder ---
 # Show all filename extensions
