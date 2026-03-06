@@ -30,6 +30,7 @@ brew "tailwindcss"                  # Tailwind CSS CLI
 brew "tree"                         # Directory listing as tree
 brew "zsh-autosuggestions"          # Fish-like autosuggestions for zsh
 brew "zsh-syntax-highlighting"      # Syntax highlighting for zsh
+brew "tmux"                         # Terminal multiplexer
 
 # Formulae — from third-party taps
 brew "antoniorodr/memo/memo"        # Memo CLI
