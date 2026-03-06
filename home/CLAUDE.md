@@ -12,6 +12,7 @@ This machine's dev environment is bootstrapped from `~/datamat`. Keep it in sync
   Brewfile                # Homebrew formulae + casks
   cursor-extensions.txt   # Cursor extension IDs
   zed-extensions.txt      # Zed extension names
+  dia-extensions.txt      # Dia (Chromium) extension IDs
   scripts/                # Per-module install scripts
   home/                   # Symlinked to ~/ (cross-platform)
   home-macos/             # Symlinked to ~/ (macOS only)
@@ -29,6 +30,7 @@ When the user installs/uninstalls tools, run the relevant sync:
 | Cursor extensions | `cursor --list-extensions > ~/datamat/cursor-extensions.txt` |
 | Zed extensions | `ls "$HOME/Library/Application Support/Zed/extensions/installed/" > ~/datamat/zed-extensions.txt` |
 | Go tool binaries | Edit the `GO_PACKAGES` array in `~/datamat/scripts/go.sh` |
+| Dia browser settings | `~/datamat/scripts/dia.sh dump` |
 | Config files | Already tracked via symlinks — just commit |
 
 After syncing, remind the user to review and commit the changes.

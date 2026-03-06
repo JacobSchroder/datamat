@@ -9,3 +9,4 @@ Brewfile.lock.json
 home/.config/zed/.tmp*
 home/.config/zed/conversations/
 home/.config/zed/embeddings/
+dia-preferences.json
