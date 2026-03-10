@@ -63,4 +63,4 @@ Before committing, check these files for secrets:
 
 ## Not tracked
 
-Music production apps are installed manually and excluded from drift detection: Ableton Live, Native Instruments, Arturia, Soundtoys, rekordbox.
+Music production apps are installed manually and excluded from drift detection: Ableton Live, Native Instruments, Arturia, Soundtoys, rekordbox. See [`MUSIC_SETUP.md`](MUSIC_SETUP.md) for full installation instructions.
