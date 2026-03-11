@@ -101,6 +101,30 @@ defaults write com.apple.TextEdit RichText -int 0
 # Disable the "Are you sure you want to open this application?" dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
+# --- Night Shift ---
+# Enable Night Shift on a custom schedule (20:00–06:00)
+NS_UID=$(dscl . -read "/Users/$(whoami)" GeneratedUID | awk '{print $2}')
+NS_PLIST="$HOME/Library/Preferences/com.apple.CoreBrightness.plist"
+NS_BASE=":CBUser-${NS_UID}:CBBlueReductionStatus"
+
+pb() { /usr/libexec/PlistBuddy -c "$1" "$NS_PLIST" 2>/dev/null; }
+
+ns_set() {
+  pb "Set ${1} ${3}" || pb "Add ${1} ${2} ${3}"
+}
+
+# Ensure parent dicts exist
+pb "Add :CBUser-${NS_UID} dict" || true
+pb "Add ${NS_BASE} dict" || true
+pb "Add ${NS_BASE}:BlueLightReductionSchedule dict" || true
+
+ns_set "${NS_BASE}:AutoBlueReductionEnabled" bool true
+ns_set "${NS_BASE}:UserEnabled" bool true
+ns_set "${NS_BASE}:BlueLightReductionSchedule:DayStartHour" integer 6
+ns_set "${NS_BASE}:BlueLightReductionSchedule:DayStartMinute" integer 0
+ns_set "${NS_BASE}:BlueLightReductionSchedule:NightStartHour" integer 20
+ns_set "${NS_BASE}:BlueLightReductionSchedule:NightStartMinute" integer 0
+
 # --- Apply changes ---
 echo "    Restarting affected applications..."
 killall Dock 2>/dev/null || true
