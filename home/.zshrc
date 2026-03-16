@@ -141,3 +141,5 @@ export NVM_DIR=~/.nvm
 
 # OpenClaw Completion
 source "$HOME/.openclaw/completions/openclaw.zsh"
+
+eval "$(direnv hook zsh)"

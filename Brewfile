@@ -41,6 +41,7 @@ brew "yakitrak/yakitrak/obsidian-cli" # Obsidian vault CLI
 # Casks — Dev tools
 cask "cursor"                       # AI-powered code editor
 cask "ghostty"                      # GPU-accelerated terminal emulator
+cask "cmux"                         # Terminal for agentic coding
 cask "orbstack"                     # Fast Docker & Linux on macOS
 cask "session-manager-plugin"       # AWS Session Manager plugin
 cask "sf-symbols"                   # Apple SF Symbols browser
