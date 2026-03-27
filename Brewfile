@@ -46,6 +46,7 @@ cask "orbstack"                     # Fast Docker & Linux on macOS
 cask "session-manager-plugin"       # AWS Session Manager plugin
 cask "sf-symbols"                   # Apple SF Symbols browser
 cask "zed"                          # High-performance code editor
+cask "sublime-merge"                # Sublime Text merge tool
 
 # Casks — Productivity
 cask "claude"                       # Anthropic Claude desktop app
