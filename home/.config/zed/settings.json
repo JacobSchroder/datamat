@@ -10,17 +10,21 @@
 	"edit_predictions": {
 		"provider": "zed"
 	},
-	"icon_theme": "Zed (Default)",
+	"icon_theme": {
+  "mode": "dark",
+  "light": "Zed (Default)",
+  "dark": "Zed (Default)"
+ },
 	"vim_mode": false,
 	"context_servers": {
 		"mcp-server-context7": {
-			"enabled": true,
+   "enabled": true,
 			"settings": {
 				"default_minimum_tokens": "10000"
 			}
 		},
 		"Sanity": {
-			"settings": {},
+   "settings": {},
 			"url": "https://mcp.sanity.io",
 			"headers": {
 				"Authorization": "Bearer <SANITY_TOKEN>"
@@ -47,7 +51,7 @@
 		}
 	},
 	"theme": {
-		"mode": "system",
+		"mode": "dark",
 		"light": "One Light",
 		"dark": "macOS Classic Dark"
 	},
@@ -78,7 +82,7 @@
 			},
 			"language_servers": ["vtsls"]
 		},
-		"JSON": { "formatter": { "language_server": { "name": "biome" } } },
+		"JSON": { "formatter": "auto" },
 		"JSONC": { "formatter": { "language_server": { "name": "biome" } } },
 		"CSS": { "formatter": { "language_server": { "name": "biome" } } }
 	}

@@ -47,6 +47,7 @@ cask "session-manager-plugin"       # AWS Session Manager plugin
 cask "sf-symbols"                   # Apple SF Symbols browser
 cask "zed"                          # High-performance code editor
 cask "sublime-merge"                # Sublime Text merge tool
+cask "insomnia"                     # API testing client
 
 # Casks — Productivity
 cask "claude"                       # Anthropic Claude desktop app

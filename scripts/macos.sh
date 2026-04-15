@@ -36,7 +36,7 @@ DOCK_APPS=(
   "/Applications/Brave Browser.app"
   "/Applications/Dia.app"
   "/Applications/Linear.app"
-  "/Applications/Ghostty.app"
+  "/Applications/cmux.app"
   "/Applications/Zed.app"
   "/Applications/Claude.app"
   "/System/Applications/System Settings.app"
