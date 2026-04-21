@@ -1,5 +1,6 @@
 # Taps
 tap "antoniorodr/memo"              # Memo CLI tool
+tap "atlassian/homebrew-acli"       # Atlassian CLI tap
 tap "hashicorp/tap"                 # HashiCorp official tap
 tap "steipete/tap"                  # remindctl and other tools
 tap "upcloudltd/tap"                # UpCloud CLI
@@ -34,6 +35,7 @@ brew "tmux"                         # Terminal multiplexer
 
 # Formulae — from third-party taps
 brew "antoniorodr/memo/memo"        # Memo CLI
+brew "atlassian/homebrew-acli/acli" # Atlassian CLI
 brew "hashicorp/tap/terraform"      # Terraform IaC tool
 brew "steipete/tap/remindctl"       # Apple Reminders CLI
 brew "yakitrak/yakitrak/obsidian-cli" # Obsidian vault CLI
