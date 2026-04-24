@@ -7,11 +7,28 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-	"edit_predictions": {
+	"agent_servers": {
+  "claude-acp": {
+   "type": "registry"
+  }
+ },
+ "project_panel": {
+  "dock": "left"
+ },
+ "outline_panel": {
+  "dock": "left"
+ },
+ "collaboration_panel": {
+  "dock": "left"
+ },
+ "git_panel": {
+  "dock": "left"
+ },
+ "edit_predictions": {
 		"provider": "zed"
 	},
 	"icon_theme": {
-  "mode": "dark",
+  "mode": "system",
   "light": "Zed (Default)",
   "dark": "Zed (Default)"
  },
@@ -51,7 +68,7 @@
 		}
 	},
 	"theme": {
-		"mode": "dark",
+		"mode": "system",
 		"light": "One Light",
 		"dark": "macOS Classic Dark"
 	},
